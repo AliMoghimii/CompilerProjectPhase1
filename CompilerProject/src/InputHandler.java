@@ -11,7 +11,6 @@ public class InputHandler {
         System.out.println(file.exists());
         FileReader f1 = new FileReader(file);
 
-
         myfist scanner = new myfist(f1);
         int code = scanner.yylex();
 

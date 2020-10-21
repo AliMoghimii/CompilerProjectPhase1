@@ -61,7 +61,7 @@ public class myfist {
   private static final int [] ZZ_CMAP_BLOCKS = zzUnpackcmap_blocks();
 
   private static final String ZZ_CMAP_BLOCKS_PACKED_0 =
-    "\61\0\11\1\u01c6\0";
+    "\173\0\1\1\1\0\1\2\u0182\0";
 
   private static int [] zzUnpackcmap_blocks() {
     int [] result = new int[512];
@@ -88,10 +88,10 @@ public class myfist {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\2\0\1\1\1\2";
+    "\2\0\1\1\1\2\1\3\1\4";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[4];
+    int [] result = new int[6];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -116,10 +116,10 @@ public class myfist {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\2\0\4\0\6";
+    "\0\0\0\3\0\6\0\6\0\6\0\6";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[4];
+    int [] result = new int[6];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -142,10 +142,10 @@ public class myfist {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\3\1\4\2\3\3\0\1\4";
+    "\1\3\1\4\1\3\2\5\1\6\3\0";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[8];
+    int [] result = new int[9];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -188,10 +188,10 @@ public class myfist {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\2\0\1\11\1\1";
+    "\2\0\4\11";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[4];
+    int [] result = new int[6];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -615,12 +615,22 @@ public class myfist {
             { System.out.print(yytext());
             }
             // fall through
-          case 3: break;
+          case 5: break;
           case 2:
-            { name = yytext(); System.out.println("lexume detected: " + name);
+            { yybegin(cb);  commentvalue = new StringBuilder();
             }
             // fall through
-          case 4: break;
+          case 6: break;
+          case 3:
+            { commentvalue.append(yytext());
+            }
+            // fall through
+          case 7: break;
+          case 4:
+            { yybegin(YYINITIAL);
+            }
+            // fall through
+          case 8: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }

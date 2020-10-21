@@ -20,19 +20,20 @@ reg1 = (a|b)+
 // rule part //
 
 //"my name " [a-z]+    {name = yytext();}
-[1-9]+   {name = yytext(); System.out.println("lexume detected: " + name);}
+//[1-9]+   {name = yytext(); System.out.println("lexume detected: " + name);}
 
-//<YYINITIAL>{
-//    [{]     {yybegin(cb);  commentvalue = new StringBuilder();}
-//
-//
-//
-//}
-//<cb>{
-//   [}] {yybegin(YYINITIAL); }
-//   [^] {commentvalue.append(yytext());}
-//
-//}
+<YYINITIAL>{
+    [{]     {yybegin(cb);  commentvalue = new StringBuilder();}
+
+
+
+}
+
+<cb>{
+   [}] {yybegin(YYINITIAL); }
+   [^] {commentvalue.append(yytext());}
+
+}
 
 
 

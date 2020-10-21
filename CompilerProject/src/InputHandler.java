@@ -18,6 +18,5 @@ public class InputHandler {
 
         // System.out.println(scanner.yytext());
 
-
     }
 }

@@ -18,6 +18,9 @@ public enum Token {
     T_SemiColon, T_Comma, T_Dot,
     T_OBracket, T_CBracket, T_OParen, T_Cparen,
     /*==================================*/
+    // comments:
+    T_SingleLinedComment, T_MultiLinedComment,
+    /*==================================*/
     // WHITE SPACE possible token for distinguisher. or just changes state.
     T_STRINGLITERAL,
     T_INTLITERAL,       // read descriptions // to be added

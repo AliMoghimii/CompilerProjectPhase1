@@ -3,6 +3,7 @@
 %class myfist
 %standalone
 
+
 %unicode
 cer = [\n|\r|\n\r]
 reg1 = (a|b)+

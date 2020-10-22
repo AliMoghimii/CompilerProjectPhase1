@@ -34,8 +34,6 @@ reg1 = (a|b)+
 
 }
 
-
-
 //[1-7]+      {name = yytext(); }
 //= {name = yytext();}
 //{reg1}  {name = yytext(); }

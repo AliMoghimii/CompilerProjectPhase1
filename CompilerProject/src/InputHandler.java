@@ -10,10 +10,19 @@ public class InputHandler {
         File file = new File("D:\\Universty\\Term_7\\Compiler\\Project\\CompilerProject\\CompilerProject\\src\\t1.txt");
         System.out.println(file.exists());
         FileReader f1 = new FileReader(file);
-
         myfist scanner = new myfist(f1);
-        int code = scanner.yylex();
+        int j = 0;
 
+        while(true) {
+
+            int code = scanner.yylex();
+            System.out.println(j);
+            if (code == scanner.YYEOF)
+                break;
+            j++;
+        }
+
+       // Token t = Token.
         System.out.println("\nkeyword tokens:");
         for (int i = 0; i < scanner.tokenArrayList.size(); i++){
             System.out.println(scanner.tokenArrayList.get(i));

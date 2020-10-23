@@ -1,3 +1,5 @@
+import java.util.ArrayList;
+
 %%
 %public
 %class myfist
@@ -21,9 +23,19 @@ reg1 = (a|b)+
 
 //"my name " [a-z]+    {name = yytext();}
 //[1-9]+   {name = yytext(); System.out.println("lexume detected: " + name);}
-int  { tokenArrayList.add(Token.T_int);}
-double  { tokenArrayList.add(Token.T_double);}
-void    { tokenArrayList.add(Token.T_void);}
+
+
+
+int  {tokenArrayList.add(Token.T_int); System.out.println("INT!!"); return 1;}
+double  { tokenArrayList.add(Token.T_double);System.out.println("DOUBLE!!");}
+void    { tokenArrayList.add(Token.T_void);System.out.println("VOID!!");}
+
+//  *      *//
+/*
+
+*/
+
+[a-zA-Z]+ [1-9]* {tokenArrayList.add(Token.T_ID);}
 
 //<YYINITIAL>{
 //    [{]     {yybegin(cb);  commentvalue = new StringBuilder();}

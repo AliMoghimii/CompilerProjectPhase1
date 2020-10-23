@@ -1,4 +1,8 @@
-hello {=k=k my name is 2 alireza 9}
 
 
-this my first test.
+int main(void){
+
+    double a = 2.23;
+    int b = 12;
+
+}

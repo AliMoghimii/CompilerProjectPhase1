@@ -1,13 +1,15 @@
 public enum Token {
 
     //list of Tokens described in project.
-    /*==================================*/
+
     //keywords:     Alireza
+
     T_void, T_int, T_double, T_bool, T_string, T_class, T_interface, T_null,
     T_this, T_extends, T_implements, T_for, T_while, T_if, T_else, T_return,
     T_break, T_continue, T_new, T_NewArray, T_Print, T_ReadInteger, T_ReadLine,
     T_dtoi, T_itod, T_btoi, T_itob, T_private, T_protected, T_public,
-    /*==================================*/
+
+
     //other reserved words:     Arya
     T_BOOLEANLITERAL /*i.e. true | false*/,
     /*==================================*/
@@ -31,15 +33,15 @@ public enum Token {
     private String attribute = null;
     private String givenName = null;
 
-    Token(){}
-    Token (String givenName){
-        this.givenName = givenName;
-    }
-
-    Token(String givenName, String attribute){
-        this.attribute = attribute;
-        this.givenName = givenName;
-    }
+//    Token(){}
+//    Token (String givenName){
+//        this.givenName = givenName;
+//    }
+//
+//    Token(String givenName, String attribute){
+//        this.attribute = attribute;
+//        this.givenName = givenName;
+//    }
 
     /*setters and getters.*/
 }

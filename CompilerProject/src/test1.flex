@@ -11,6 +11,7 @@ reg1 = (a|b)+
     String name;
     int len;
     StringBuilder commentvalue = new StringBuilder();
+    ArrayList<Token> tokenArrayList = new ArrayList<Token>();
 %}
 
 %xstate cb
@@ -20,21 +21,25 @@ reg1 = (a|b)+
 
 //"my name " [a-z]+    {name = yytext();}
 //[1-9]+   {name = yytext(); System.out.println("lexume detected: " + name);}
+int  { tokenArrayList.add(Token.T_int);}
+double  { tokenArrayList.add(Token.T_double);}
+void    { tokenArrayList.add(Token.T_void);}
 
-<YYINITIAL>{
-    [{]     {yybegin(cb);  commentvalue = new StringBuilder();}
+//<YYINITIAL>{
+//    [{]     {yybegin(cb);  commentvalue = new StringBuilder();}
+//
+//
+//
+//}
+//
+//<cb>{
+//   [}] {yybegin(YYINITIAL); }
+//   [^] {commentvalue.append(yytext());}
+//
+//}
+//
 
-
-
-}
-
-<cb>{
-   [}] {yybegin(YYINITIAL); }
-   [^] {commentvalue.append(yytext());}
-
-}
 
 //[1-7]+      {name = yytext(); }
 //= {name = yytext();}
 //{reg1}  {name = yytext(); }
-

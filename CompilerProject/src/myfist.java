@@ -3,6 +3,8 @@
 // source: test1.flex
 
 
+import java.util.ArrayList;
+
 // See https://github.com/jflex-de/jflex/issues/222
 @SuppressWarnings("FallThrough")
 public class myfist {
@@ -61,7 +63,9 @@ public class myfist {
   private static final int [] ZZ_CMAP_BLOCKS = zzUnpackcmap_blocks();
 
   private static final String ZZ_CMAP_BLOCKS_PACKED_0 =
-    "\173\0\1\1\1\0\1\2\u0182\0";
+    "\142\0\1\1\1\0\1\2\1\3\3\0\1\4\2\0"+
+    "\1\5\1\0\1\6\1\7\4\0\1\10\1\11\1\12"+
+    "\u0189\0";
 
   private static int [] zzUnpackcmap_blocks() {
     int [] result = new int[512];
@@ -88,10 +92,10 @@ public class myfist {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\2\0\1\1\1\2\1\3\1\4";
+    "\2\0\4\1\4\0\1\2\2\0\1\3\1\0\1\4";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[6];
+    int [] result = new int[16];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -116,10 +120,11 @@ public class myfist {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\3\0\6\0\6\0\6\0\6";
+    "\0\0\0\13\0\26\0\41\0\54\0\67\0\102\0\115"+
+    "\0\130\0\143\0\26\0\156\0\171\0\26\0\204\0\26";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[6];
+    int [] result = new int[16];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -142,10 +147,13 @@ public class myfist {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\1\3\1\4\1\3\2\5\1\6\3\0";
+    "\2\3\1\4\1\3\1\5\5\3\1\6\13\3\22\0"+
+    "\1\7\11\0\1\10\13\0\1\11\14\0\1\12\11\0"+
+    "\1\13\6\0\1\14\7\0\1\15\13\0\1\16\15\0"+
+    "\1\17\10\0\1\20\7\0";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[9];
+    int [] result = new int[143];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -188,10 +196,11 @@ public class myfist {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\2\0\4\11";
+    "\2\0\1\11\3\1\4\0\1\11\2\0\1\11\1\0"+
+    "\1\11";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[6];
+    int [] result = new int[16];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -274,6 +283,7 @@ public class myfist {
     String name;
     int len;
     StringBuilder commentvalue = new StringBuilder();
+    ArrayList<Token> tokenArrayList = new ArrayList<Token>();
 
 
   /**
@@ -617,17 +627,17 @@ public class myfist {
             // fall through
           case 5: break;
           case 2:
-            { yybegin(cb);  commentvalue = new StringBuilder();
+            { tokenArrayList.add(Token.T_int);
             }
             // fall through
           case 6: break;
           case 3:
-            { commentvalue.append(yytext());
+            { tokenArrayList.add(Token.T_void);
             }
             // fall through
           case 7: break;
           case 4:
-            { yybegin(YYINITIAL);
+            { tokenArrayList.add(Token.T_double);
             }
             // fall through
           case 8: break;

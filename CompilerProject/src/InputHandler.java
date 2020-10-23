@@ -14,7 +14,12 @@ public class InputHandler {
         myfist scanner = new myfist(f1);
         int code = scanner.yylex();
 
-        System.out.println("\nlexical comment recognazation: " + scanner.commentvalue);
+        System.out.println("\nkeyword tokens:");
+        for (int i = 0; i < scanner.tokenArrayList.size(); i++){
+            System.out.println(scanner.tokenArrayList.get(i));
+        }
+
+        //System.out.println("\nlexical comment recognazation: " + scanner.commentvalue);
 
         // System.out.println(scanner.yytext());
 

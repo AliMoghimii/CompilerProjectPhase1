@@ -1,6 +1,16 @@
 
 
+public interface Compiler_interface{
+
+}
+
+class Compiler_class implements Compiler_interface {
+    int ab;
+}
+
 int main(void){
+
+    int intcvff;
 
     double a = 2.23;
     int b = 12;

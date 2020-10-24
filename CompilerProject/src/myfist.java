@@ -63,9 +63,12 @@ public class myfist {
   private static final int [] ZZ_CMAP_BLOCKS = zzUnpackcmap_blocks();
 
   private static final String ZZ_CMAP_BLOCKS_PACKED_0 =
-    "\61\0\11\1\7\0\32\2\6\0\1\2\1\3\1\2"+
-    "\1\4\1\5\3\2\1\6\2\2\1\7\1\2\1\10"+
-    "\1\11\4\2\1\12\1\13\1\14\4\2\u0185\0";
+    "\44\0\1\1\13\0\12\2\7\0\1\3\7\1\1\4"+
+    "\2\1\1\5\1\1\1\6\1\1\1\7\1\1\1\10"+
+    "\10\1\4\0\1\1\1\0\1\11\1\12\1\13\1\14"+
+    "\1\15\1\16\1\17\1\20\1\21\1\1\1\22\1\23"+
+    "\1\24\1\25\1\26\1\27\1\1\1\30\1\31\1\32"+
+    "\1\33\1\34\1\35\1\36\1\37\1\1\u0185\0";
 
   private static int [] zzUnpackcmap_blocks() {
     int [] result = new int[512];
@@ -92,10 +95,16 @@ public class myfist {
   private static final int [] ZZ_ACTION = zzUnpackAction();
 
   private static final String ZZ_ACTION_PACKED_0 =
-    "\2\0\1\1\11\2\1\3\2\2\1\4\1\2\1\5";
+    "\2\0\1\1\36\2\1\3\30\2\1\4\1\2\1\5"+
+    "\1\2\1\6\14\2\1\7\1\2\1\10\3\2\1\11"+
+    "\1\12\3\2\1\13\1\14\1\15\5\2\1\16\1\17"+
+    "\2\2\1\20\2\2\1\21\1\22\12\2\1\23\4\2"+
+    "\1\24\5\2\1\25\1\26\1\27\4\2\1\30\2\2"+
+    "\1\31\1\2\1\32\1\2\1\33\1\34\5\2\1\35"+
+    "\1\36\1\2\1\37\1\40";
 
   private static int [] zzUnpackAction() {
-    int [] result = new int[18];
+    int [] result = new int[150];
     int offset = 0;
     offset = zzUnpackAction(ZZ_ACTION_PACKED_0, offset, result);
     return result;
@@ -120,12 +129,28 @@ public class myfist {
   private static final int [] ZZ_ROWMAP = zzUnpackRowMap();
 
   private static final String ZZ_ROWMAP_PACKED_0 =
-    "\0\0\0\15\0\32\0\47\0\64\0\101\0\116\0\133"+
-    "\0\150\0\165\0\202\0\217\0\47\0\234\0\251\0\47"+
-    "\0\266\0\47";
+    "\0\0\0\40\0\100\0\140\0\200\0\240\0\300\0\340"+
+    "\0\u0100\0\u0120\0\u0140\0\u0160\0\u0180\0\u01a0\0\u01c0\0\u01e0"+
+    "\0\u0200\0\u0220\0\u0240\0\u0260\0\u0280\0\u02a0\0\u02c0\0\u02e0"+
+    "\0\u0300\0\u0320\0\u0340\0\u0360\0\u0380\0\u03a0\0\u03c0\0\u03e0"+
+    "\0\u0400\0\140\0\u0420\0\u0440\0\u0460\0\u0480\0\u04a0\0\u04c0"+
+    "\0\u04e0\0\u0500\0\u0520\0\u0540\0\u0560\0\u0580\0\u05a0\0\u05c0"+
+    "\0\u05e0\0\u0600\0\u0620\0\u0640\0\u0660\0\u0680\0\u06a0\0\u06c0"+
+    "\0\u06e0\0\u0700\0\140\0\u0720\0\u0740\0\u0760\0\140\0\u0780"+
+    "\0\u07a0\0\u07c0\0\u07e0\0\u0800\0\u0820\0\u0840\0\u0860\0\u0880"+
+    "\0\u08a0\0\u08c0\0\u08e0\0\140\0\u0900\0\140\0\u0920\0\u0940"+
+    "\0\u0960\0\140\0\140\0\u0980\0\u09a0\0\u09c0\0\140\0\140"+
+    "\0\140\0\u09e0\0\u0a00\0\u0a20\0\u0a40\0\u0a60\0\140\0\140"+
+    "\0\u0a80\0\u0aa0\0\140\0\u0ac0\0\u0ae0\0\140\0\140\0\u0b00"+
+    "\0\u0b20\0\u0b40\0\u0b60\0\u0b80\0\u0ba0\0\u0bc0\0\u0be0\0\u0c00"+
+    "\0\u0c20\0\140\0\u0c40\0\u0c60\0\u0c80\0\u0ca0\0\140\0\u0cc0"+
+    "\0\u0ce0\0\u0d00\0\u0d20\0\u0d40\0\140\0\140\0\140\0\u0d60"+
+    "\0\u0d80\0\u0da0\0\u0dc0\0\140\0\u0de0\0\u0e00\0\140\0\u0e20"+
+    "\0\140\0\u0e40\0\140\0\140\0\u0e60\0\u0e80\0\u0ea0\0\u0ec0"+
+    "\0\u0ee0\0\140\0\140\0\u0f00\0\140\0\140";
 
   private static int [] zzUnpackRowMap() {
-    int [] result = new int[18];
+    int [] result = new int[150];
     int offset = 0;
     offset = zzUnpackRowMap(ZZ_ROWMAP_PACKED_0, offset, result);
     return result;
@@ -148,17 +173,74 @@ public class myfist {
   private static final int [] ZZ_TRANS = zzUnpackTrans();
 
   private static final String ZZ_TRANS_PACKED_0 =
-    "\2\3\2\4\1\5\1\4\1\6\5\4\1\7\15\3"+
-    "\16\0\1\10\13\4\1\0\1\10\7\4\1\11\3\4"+
-    "\1\0\1\10\6\4\1\12\4\4\1\0\1\10\7\4"+
-    "\1\13\3\4\1\0\1\10\14\0\1\10\11\4\1\14"+
-    "\1\4\1\0\1\10\10\4\1\15\2\4\1\0\1\10"+
-    "\4\4\1\16\6\4\1\0\1\10\1\4\1\17\11\4"+
-    "\1\0\1\10\2\4\1\20\10\4\1\0\1\10\5\4"+
-    "\1\21\5\4\1\0\1\10\3\4\1\22\7\4";
+    "\1\3\1\4\1\3\3\4\1\5\1\6\1\7\1\4"+
+    "\1\10\1\11\1\12\1\13\1\14\2\4\1\15\3\4"+
+    "\1\16\1\4\1\17\1\20\1\21\1\22\1\4\1\23"+
+    "\1\24\2\4\40\3\41\0\37\4\1\0\14\4\1\25"+
+    "\22\4\1\0\27\4\1\26\7\4\1\0\14\4\1\27"+
+    "\22\4\1\0\25\4\1\30\1\4\1\31\1\4\1\32"+
+    "\5\4\1\0\22\4\1\33\2\4\1\34\11\4\1\0"+
+    "\25\4\1\35\3\4\1\36\5\4\1\0\22\4\1\37"+
+    "\12\4\1\40\1\4\1\0\25\4\1\41\11\4\1\0"+
+    "\15\4\1\42\5\4\1\43\1\44\4\4\1\45\5\4"+
+    "\1\0\14\4\1\46\15\4\1\47\4\4\1\0\27\4"+
+    "\1\50\2\4\1\51\4\4\1\0\14\4\1\52\22\4"+
+    "\1\0\31\4\1\53\5\4\1\0\17\4\1\54\17\4"+
+    "\1\0\25\4\1\55\11\4\1\0\17\4\1\56\17\4"+
+    "\1\0\34\4\1\57\2\4\1\0\20\4\1\60\16\4"+
+    "\1\0\10\4\1\61\26\4\1\0\25\4\1\62\11\4"+
+    "\1\0\14\4\1\63\22\4\1\0\25\4\1\64\11\4"+
+    "\1\0\10\4\1\65\26\4\1\0\24\4\1\66\12\4"+
+    "\1\0\32\4\1\67\4\4\1\0\25\4\1\70\11\4"+
+    "\1\0\30\4\1\71\6\4\1\0\31\4\1\72\5\4"+
+    "\1\0\27\4\1\73\7\4\1\0\26\4\1\74\10\4"+
+    "\1\0\31\4\1\75\5\4\1\0\25\4\1\76\11\4"+
+    "\1\0\34\4\1\77\2\4\1\0\22\4\1\100\14\4"+
+    "\1\0\20\4\1\101\4\4\1\102\11\4\1\0\11\4"+
+    "\1\103\25\4\1\0\31\4\1\104\5\4\1\0\27\4"+
+    "\1\105\7\4\1\0\20\4\1\106\16\4\1\0\20\4"+
+    "\1\107\16\4\1\0\20\4\1\110\16\4\1\0\2\4"+
+    "\1\111\34\4\1\0\24\4\1\112\12\4\1\0\13\4"+
+    "\1\113\23\4\1\0\22\4\1\114\14\4\1\0\10\4"+
+    "\1\115\26\4\1\0\20\4\1\116\16\4\1\0\30\4"+
+    "\1\117\6\4\1\0\31\4\1\120\5\4\1\0\11\4"+
+    "\1\121\25\4\1\0\20\4\1\122\16\4\1\0\14\4"+
+    "\1\123\22\4\1\0\14\4\1\124\22\4\1\0\22\4"+
+    "\1\125\14\4\1\0\14\4\1\126\22\4\1\0\11\4"+
+    "\1\127\1\4\1\130\23\4\1\0\22\4\1\131\14\4"+
+    "\1\0\33\4\1\132\3\4\1\0\31\4\1\133\5\4"+
+    "\1\0\22\4\1\134\14\4\1\0\32\4\1\135\4\4"+
+    "\1\0\20\4\1\136\16\4\1\0\30\4\1\137\6\4"+
+    "\1\0\13\4\1\140\23\4\1\0\22\4\1\141\14\4"+
+    "\1\0\27\4\1\142\7\4\1\0\31\4\1\143\5\4"+
+    "\1\0\3\4\1\144\1\145\32\4\1\0\21\4\1\146"+
+    "\15\4\1\0\30\4\1\147\6\4\1\0\20\4\1\150"+
+    "\16\4\1\0\22\4\1\151\14\4\1\0\24\4\1\152"+
+    "\12\4\1\0\14\4\1\153\22\4\1\0\27\4\1\154"+
+    "\7\4\1\0\10\4\1\155\26\4\1\0\14\4\1\156"+
+    "\22\4\1\0\20\4\1\157\16\4\1\0\27\4\1\160"+
+    "\7\4\1\0\24\4\1\161\12\4\1\0\14\4\1\162"+
+    "\22\4\1\0\27\4\1\163\7\4\1\0\24\4\1\164"+
+    "\12\4\1\0\20\4\1\165\16\4\1\0\24\4\1\166"+
+    "\12\4\1\0\14\4\1\167\22\4\1\0\13\4\1\170"+
+    "\23\4\1\0\23\4\1\171\13\4\1\0\15\4\1\172"+
+    "\21\4\1\0\31\4\1\173\5\4\1\0\12\4\1\174"+
+    "\24\4\1\0\12\4\1\175\24\4\1\0\24\4\1\176"+
+    "\12\4\1\0\16\4\1\177\20\4\1\0\10\4\1\200"+
+    "\26\4\1\0\31\4\1\201\5\4\1\0\24\4\1\202"+
+    "\12\4\1\0\32\4\1\203\4\4\1\0\30\4\1\204"+
+    "\6\4\1\0\14\4\1\205\22\4\1\0\10\4\1\206"+
+    "\26\4\1\0\14\4\1\207\22\4\1\0\31\4\1\210"+
+    "\5\4\1\0\36\4\1\211\1\0\14\4\1\212\22\4"+
+    "\1\0\14\4\1\213\22\4\1\0\14\4\1\214\22\4"+
+    "\1\0\24\4\1\215\12\4\1\0\12\4\1\216\24\4"+
+    "\1\0\14\4\1\217\22\4\1\0\16\4\1\220\20\4"+
+    "\1\0\31\4\1\221\5\4\1\0\14\4\1\222\22\4"+
+    "\1\0\13\4\1\223\23\4\1\0\14\4\1\224\22\4"+
+    "\1\0\30\4\1\225\6\4\1\0\27\4\1\226\7\4";
 
   private static int [] zzUnpackTrans() {
-    int [] result = new int[195];
+    int [] result = new int[3872];
     int offset = 0;
     offset = zzUnpackTrans(ZZ_TRANS_PACKED_0, offset, result);
     return result;
@@ -201,10 +283,10 @@ public class myfist {
   private static final int [] ZZ_ATTRIBUTE = zzUnpackAttribute();
 
   private static final String ZZ_ATTRIBUTE_PACKED_0 =
-    "\2\0\1\11\17\1";
+    "\2\0\1\11\223\1";
 
   private static int [] zzUnpackAttribute() {
-    int [] result = new int[18];
+    int [] result = new int[150];
     int offset = 0;
     offset = zzUnpackAttribute(ZZ_ATTRIBUTE_PACKED_0, offset, result);
     return result;
@@ -629,27 +711,162 @@ public class myfist {
             { System.out.print(yytext());
             }
             // fall through
-          case 6: break;
+          case 33: break;
           case 2:
             { tokenArrayList.add(Token.T_ID);
             }
             // fall through
-          case 7: break;
+          case 34: break;
           case 3:
-            { tokenArrayList.add(Token.T_int); System.out.println("INT!!"); return 1;
+            { tokenArrayList.add(Token.T_if);  TokenHandler.handle(Token.T_if);
             }
             // fall through
-          case 8: break;
+          case 35: break;
           case 4:
-            { tokenArrayList.add(Token.T_void);System.out.println("VOID!!");
+            { tokenArrayList.add(Token.T_for);  TokenHandler.handle(Token.T_for);
             }
             // fall through
-          case 9: break;
+          case 36: break;
           case 5:
-            { tokenArrayList.add(Token.T_double);System.out.println("DOUBLE!!");
+            { tokenArrayList.add(Token.T_int); TokenHandler.handle(Token.T_int);
             }
             // fall through
-          case 10: break;
+          case 37: break;
+          case 6:
+            { tokenArrayList.add(Token.T_new);  TokenHandler.handle(Token.T_new);
+            }
+            // fall through
+          case 38: break;
+          case 7:
+            { tokenArrayList.add(Token.T_bool);  TokenHandler.handle(Token.T_bool);
+            }
+            // fall through
+          case 39: break;
+          case 8:
+            { tokenArrayList.add(Token.T_btoi);  TokenHandler.handle(Token.T_btoi);
+            }
+            // fall through
+          case 40: break;
+          case 9:
+            { tokenArrayList.add(Token.T_dtoi);  TokenHandler.handle(Token.T_dtoi);
+            }
+            // fall through
+          case 41: break;
+          case 10:
+            { tokenArrayList.add(Token.T_else);  TokenHandler.handle(Token.T_else);
+            }
+            // fall through
+          case 42: break;
+          case 11:
+            { tokenArrayList.add(Token.T_itob);  TokenHandler.handle(Token.T_itob);
+            }
+            // fall through
+          case 43: break;
+          case 12:
+            { tokenArrayList.add(Token.T_itod);  TokenHandler.handle(Token.T_itod);
+            }
+            // fall through
+          case 44: break;
+          case 13:
+            { tokenArrayList.add(Token.T_null);  TokenHandler.handle(Token.T_null);
+            }
+            // fall through
+          case 45: break;
+          case 14:
+            { tokenArrayList.add(Token.T_this);  TokenHandler.handle(Token.T_this);
+            }
+            // fall through
+          case 46: break;
+          case 15:
+            { tokenArrayList.add(Token.T_void);  TokenHandler.handle(Token.T_void);
+            }
+            // fall through
+          case 47: break;
+          case 16:
+            { tokenArrayList.add(Token.T_Print);  TokenHandler.handle(Token.T_Print);
+            }
+            // fall through
+          case 48: break;
+          case 17:
+            { tokenArrayList.add(Token.T_break);  TokenHandler.handle(Token.T_break);
+            }
+            // fall through
+          case 49: break;
+          case 18:
+            { tokenArrayList.add(Token.T_class);  TokenHandler.handle(Token.T_class);
+            }
+            // fall through
+          case 50: break;
+          case 19:
+            { tokenArrayList.add(Token.T_while);  TokenHandler.handle(Token.T_while);
+            }
+            // fall through
+          case 51: break;
+          case 20:
+            { tokenArrayList.add(Token.T_double); TokenHandler.handle(Token.T_double);
+            }
+            // fall through
+          case 52: break;
+          case 21:
+            { tokenArrayList.add(Token.T_public);  TokenHandler.handle(Token.T_public);
+            }
+            // fall through
+          case 53: break;
+          case 22:
+            { tokenArrayList.add(Token.T_return);  TokenHandler.handle(Token.T_return);
+            }
+            // fall through
+          case 54: break;
+          case 23:
+            { tokenArrayList.add(Token.T_string);  TokenHandler.handle(Token.T_string);
+            }
+            // fall through
+          case 55: break;
+          case 24:
+            { tokenArrayList.add(Token.T_extends);  TokenHandler.handle(Token.T_extends);
+            }
+            // fall through
+          case 56: break;
+          case 25:
+            { tokenArrayList.add(Token.T_private);  TokenHandler.handle(Token.T_private);
+            }
+            // fall through
+          case 57: break;
+          case 26:
+            { tokenArrayList.add(Token.T_NewArray);  TokenHandler.handle(Token.T_NewArray);
+            }
+            // fall through
+          case 58: break;
+          case 27:
+            { tokenArrayList.add(Token.T_ReadLine);  TokenHandler.handle(Token.T_ReadLine);
+            }
+            // fall through
+          case 59: break;
+          case 28:
+            { tokenArrayList.add(Token.T_continue);  TokenHandler.handle(Token.T_continue);
+            }
+            // fall through
+          case 60: break;
+          case 29:
+            { tokenArrayList.add(Token.T_interface);  TokenHandler.handle(Token.T_interface);
+            }
+            // fall through
+          case 61: break;
+          case 30:
+            { tokenArrayList.add(Token.T_protected);  TokenHandler.handle(Token.T_protected);
+            }
+            // fall through
+          case 62: break;
+          case 31:
+            { tokenArrayList.add(Token.T_implements);  TokenHandler.handle(Token.T_implements);
+            }
+            // fall through
+          case 63: break;
+          case 32:
+            { tokenArrayList.add(Token.T_ReadInteger);  TokenHandler.handle(Token.T_ReadInteger);
+            }
+            // fall through
+          case 64: break;
           default:
             zzScanError(ZZ_NO_MATCH);
         }

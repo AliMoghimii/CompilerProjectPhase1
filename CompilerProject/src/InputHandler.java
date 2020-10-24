@@ -7,14 +7,28 @@ public class InputHandler {
 
     public static void main(String[] args) throws IOException {
 
-        File file = new File("D:\\Universty\\Term_7\\Compiler\\Project\\CompilerProject\\CompilerProject\\src\\t1.txt");
+        File file = new File("src\\t1.txt");
         System.out.println(file.exists());
         FileReader f1 = new FileReader(file);
+        DecafScanner scanner = new DecafScanner(f1);
+        int j = 0;
 
-        myfist scanner = new myfist(f1);
-        int code = scanner.yylex();
+        while(true) {
 
-        System.out.println("\nlexical comment recognazation: " + scanner.commentvalue);
+            int code = scanner.yylex();
+            /*System.out.println(j);*/
+            if (code == scanner.YYEOF)
+                break;
+            j++;
+        }
+
+       // Token t = Token.
+        //System.out.println("\nkeyword tokens:");
+        /*for (int i = 0; i < scanner.tokenArrayList.size(); i++){
+            System.out.println(scanner.tokenArrayList.get(i));
+        }*/
+
+        //System.out.println("\nlexical comment recognazation: " + scanner.commentvalue);
 
         // System.out.println(scanner.yytext());
 

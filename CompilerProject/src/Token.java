@@ -11,7 +11,7 @@ public enum Token {
 
 
     //other reserved words:     Arya
-    T_BOOLEANLITERAL /*i.e. true | false*/,
+    T_BOOLEANLITERAL("T_BOOLEANLITERAL") /*i.e. true | false*/,
     /*==================================*/
     // operators:   Ali
     T_Plus("+"), T_Minus("-"), T_Star("*"), T_Slash("/"), T_Modulus("%"),

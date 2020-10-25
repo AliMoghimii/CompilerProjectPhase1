@@ -16,6 +16,13 @@
 public interface Compiler_interface{
 
 }
+000x87239482459
+000x00af1297593
+0392702930502735028370
+01927431fkjbek311531
+voidtoi
+0xabcdefg0XABCDef12456ffff
+0XABCDef12456ffff
 
 class Compiler_class implements Compiler_interface {
     int ab;

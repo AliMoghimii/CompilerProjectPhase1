@@ -62,7 +62,13 @@ false           {OutputHandler.handle("false", Token.T_BOOLEANLITERAL);}
 
 \" ~\"          {OutputHandler.handle(yytext(),Token.T_STRINGLITERAL);}
 
+// ------------------------------------------------------ Integer literals ---------------------------------------------
+
+[0][x|X][0-9a-fA-F]+         {OutputHandler.handle(yytext(),Token.T_INTLITERAL);}
+[0-9]+                       {OutputHandler.handle(yytext(),Token.T_INTLITERAL);}
+
+
 // ---------------------------------------------------------------------------------------------------------------------
-[A-Za-z_$][A-Za-z_$0-9]*  {OutputHandler.handle(yytext(),Token.T_ID);}    // rule for ID
+[A-Za-z_$][A-Za-z_$0-9]*    {OutputHandler.handle(yytext(),Token.T_ID);}    // rule for ID
 // ---------------------------------------------------------------------------------------------------------------------
 

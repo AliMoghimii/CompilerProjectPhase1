@@ -24,6 +24,26 @@ voidtoi
 0xabcdefg0XABCDef12456ffff
 0XABCDef12456ffff
 
+2E2 // wrong. or rather a number and a keyword.
+2.E2 // correct
+12.2092385E21241 // correct
+12.2092385E0002124g1
+.12 // not correct
+.12E2
+.12E+2
+.12E-2
+0.12
+000.12E2
+000.12E+2
+0000000.12E-2
+0.12000
+000.12E00
+000.12E+0002
+0000000.12E-002
+12. // correct
+12.E2
+12.E+2
+12.E-2
 class Compiler_class implements Compiler_interface {
     int ab;
 }

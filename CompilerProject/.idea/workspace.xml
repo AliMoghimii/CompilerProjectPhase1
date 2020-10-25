@@ -4,7 +4,6 @@
     <list default="true" id="28e49d5d-d0fc-41bc-96ca-41abe019490b" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/src/DecafScanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DecafScanner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Lexer.flex" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lexer.flex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Token.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Token.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/t1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/t1.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -19,26 +18,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/InputHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
+            <state relative-caret-position="374">
               <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/t1.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="402">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="347">
+              <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Lexer.flex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+            <state relative-caret-position="296">
+              <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
             </state>
           </provider>
         </entry>
@@ -98,8 +97,8 @@
         <option value="$PROJECT_DIR$/src/TokenClass.java" />
         <option value="$PROJECT_DIR$/src/InputHandler.java" />
         <option value="$PROJECT_DIR$/src/OutputHandler.java" />
-        <option value="$PROJECT_DIR$/src/Lexer.flex" />
         <option value="$PROJECT_DIR$/src/Token.java" />
+        <option value="$PROJECT_DIR$/src/Lexer.flex" />
         <option value="$PROJECT_DIR$/src/t1.txt" />
       </list>
     </option>
@@ -224,12 +223,12 @@
       <workItem from="1603573760613" duration="5783000" />
       <workItem from="1603608238420" duration="6190000" />
       <workItem from="1603638887423" duration="5663000" />
-      <workItem from="1603650648777" duration="2705000" />
+      <workItem from="1603650648777" duration="4424000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31902000" />
+    <option name="totallyTimeSpent" value="33621000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -307,13 +306,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Desc1IntegerLit.txt" />
-    <entry file="file://$PROJECT_DIR$/src/InputHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/OutputHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -335,17 +327,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lexer.flex">
+    <entry file="file://$PROJECT_DIR$/src/InputHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="66" column="6" selection-start-line="66" selection-start-column="6" selection-end-line="66" selection-end-column="6" />
+        <state relative-caret-position="374">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/t1.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="402">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="347">
+          <caret line="42" column="7" selection-start-line="42" selection-start-column="7" selection-end-line="42" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lexer.flex">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
         </state>
       </provider>
     </entry>

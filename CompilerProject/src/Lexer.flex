@@ -46,14 +46,23 @@ private         {OutputHandler.handle(Token.T_private);}
 protected       {OutputHandler.handle(Token.T_protected);}
 public          {OutputHandler.handle(Token.T_public);}
 
-// ------------------------------------------------------Lexer ignored rules -------------------------------------------
+// ------------------------------------------------- Keywords and boolean literals -------------------------------------
+
+true            {OutputHandler.handle("true", Token.T_BOOLEANLITERAL);}
+false           {OutputHandler.handle("false", Token.T_BOOLEANLITERAL);}
+
+// ------------------------------------------------------ Lexer ignored rules ------------------------------------------
 
 [" "]           {/* no operation*/}
 {cer}           {/* no operation*/}
 ["//"]~{cer}    {/* no operation*/}
 ["/*"]~["*/"]   {/* no operation*/}
 
+// ------------------------------------------------------- String literals ---------------------------------------------
+
+\" ~\"          {OutputHandler.handle(yytext(),Token.T_STRINGLITERAL);}
+
 // ---------------------------------------------------------------------------------------------------------------------
-[A-Za-z_$][A-Za-z_$0-9]*  {OutputHandler.handle(yytext(),Token.T_ID);}    // rule for ID (modifed mathces underline too).
+[A-Za-z_$][A-Za-z_$0-9]*  {OutputHandler.handle(yytext(),Token.T_ID);}    // rule for ID
 // ---------------------------------------------------------------------------------------------------------------------
 

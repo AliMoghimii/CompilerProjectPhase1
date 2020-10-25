@@ -1,5 +1,17 @@
 
 
+//other reserved words:     Arya
+    T_BOOLEANLITERAL /*i.e. true | false*/,
+    /*==================================*/
+    // operators:   Ali
+    T_Plus("+"), T_Minus("-"), T_Star("*"), T_Slash("/"), T_Modulus("%"),
+    T_GT(">"), T_GE(">="), T_LT("<"), T_LE("<="), T_Assign("="), T_EQ("=="), T_NE("!="),
+    T_AND("&&"), T_OR("||"), T_NOT("!"),
+    T_SemiColon(";"),                                                                           T_Comma(","), T_Dot("."),
+    T_OBracket("["), T_CBracket("]"), T_OParen("("), T_Cparen(")"),
+    /*==================================*/
+    // comments:    Arya
+
 public interface Compiler_interface{
 
 }
@@ -7,7 +19,7 @@ public interface Compiler_interface{
 class Compiler_class implements Compiler_interface {
     int ab;
 }
-
+// hello this is a comment
 int main(void){
 
     int intcvff;

@@ -17,20 +17,19 @@ public enum Token {
     T_Plus("+"), T_Minus("-"), T_Star("*"), T_Slash("/"), T_Modulus("%"),
     T_GT(">"), T_GE(">="), T_LT("<"), T_LE("<="), T_Assign("="), T_EQ("=="), T_NE("!="),
     T_AND("&&"), T_OR("||"), T_NOT("!"),
-    T_SemiColon(";"), T_Comma(":"), T_Dot("."),
-    T_OBracket("["), T_CBracket("]"), T_OParen("("), T_Cparen(")"),
+    T_SemiColon(";"), T_Comma(","), T_Dot("."),
+    T_OBracket("["), T_CBracket("]"), T_OParen("("), T_CParen(")"),
     /*==================================*/
     // comments:    Arya
     /*T_SingleLinedComment, T_MultiLinedComment,*/
     /*==================================*/
     // WHITE SPACE possible token for distinguisher. or just changes state.
     T_STRINGLITERAL("T_STRINGLITERAL"),
-    T_INTLITERAL("T_INTLITERAL"),       // read descriptions Desc1IntegerLit.txt
-    T_DOUBLELITERAL("T_DOUBLELITERAL"),    // read description  Desc2DoubleLit.txt
+    T_INTLITERAL("T_INTLITERAL"),
+    T_DOUBLELITERAL("T_DOUBLELITERAL"),
     T_ID("T_ID"); // all valid identifiers.
 
     /*private fields goes here*/
-    private String attribute = null;
     private String givenName = null;
 
     Token(){}
@@ -44,10 +43,6 @@ public enum Token {
 //    }
 
     /*setters and getters.*/
-
-    public void setAttribute(String attribute) {
-        this.attribute = attribute;
-    }
 
     @Override
     public String toString() {

@@ -2,26 +2,18 @@
 %public
 %class DecafScanner
 %standalone
-
 %unicode
 cer = [\n|\r|\n\r]
-reg1 = (a|b)+
 
 %{
-    String name;
-    int len;
-    StringBuilder commentvalue = new StringBuilder();
+    // nothing was necessary here edit :: -Arya
 %}
 
 %xstate cb
 
 %%
-// ----------------------------------------------------------rule part -----------------------------------------
-
-//"my name " [a-z]+    {name = yytext();}
-//[1-9]+   {name = yytext(); System.out.println("lexume detected: " + name);}
-
-// ----------------------------------- Key word Token rules ----------------------------------------------------
+// ----------------------------------------------------------rule part -------------------------------------------------
+// ------------------------------------------------------Key word Token rules ------------------------------------------
 
 int             {OutputHandler.handle(Token.T_int);}
 double          {OutputHandler.handle(Token.T_double);}
@@ -53,26 +45,15 @@ itob            {OutputHandler.handle(Token.T_itob);}
 private         {OutputHandler.handle(Token.T_private);}
 protected       {OutputHandler.handle(Token.T_protected);}
 public          {OutputHandler.handle(Token.T_public);}
-[" "]           {}
-// ------------------------------------------------------------------------------------------------------------------
 
-[A-Za-z_$][A-Za-z_$0-9]*  {OutputHandler.handle(yytext(),Token.T_ID);}    // rule for ID (modifed mathces underline to).
+// ------------------------------------------------------Lexer ignored rules -------------------------------------------
 
-//<YYINITIAL>{
-//    [{]     {yybegin(cb);  commentvalue = new StringBuilder();}
-//
-//
-//
-//}
-//
-//<cb>{
-//   [}] {yybegin(YYINITIAL); }
-//   [^] {commentvalue.append(yytext());}
-//
-//}
-//
+[" "]           {/* no operation*/}
+{cer}           {/* no operation*/}
+["//"]~{cer}    {/* no operation*/}
+["/*"]~["*/"]   {/* no operation*/}
 
+// ---------------------------------------------------------------------------------------------------------------------
+[A-Za-z_$][A-Za-z_$0-9]*  {OutputHandler.handle(yytext(),Token.T_ID);}    // rule for ID (modifed mathces underline too).
+// ---------------------------------------------------------------------------------------------------------------------
 
-//[1-7]+      {name = yytext(); }
-//= {name = yytext();}
-//{reg1}  {name = yytext(); }

@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28e49d5d-d0fc-41bc-96ca-41abe019490b" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/JFlex_Support_10654.xml" afterPath="$PROJECT_DIR$/.idea/libraries/JFlex_Support_10654.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CompilerProject.iml" afterPath="$PROJECT_DIR$/CompilerProject.iml" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" afterPath="" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -100,7 +92,7 @@
       <file leaf-file-name="InputHandler.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/InputHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
+            <state relative-caret-position="-119">
               <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding />
             </state>
@@ -157,6 +149,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <push-targets>
+      <push-target-info target-remote="origin" target-branch="Ali" repo="$PROJECT_DIR$/.." source="master" />
+    </push-targets>
   </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
@@ -304,6 +299,14 @@
       <workItem from="1603448782375" duration="3523000" />
       <workItem from="1603573760613" duration="4773000" />
     </task>
+    <task id="LOCAL-00001" summary="Operation Rules Done and Tested but not on extreme test cases">
+      <created>1603646423510</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603646423510</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -356,6 +359,10 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Operation Rules Done and Tested but not on extreme test cases" />
+    <option name="LAST_COMMIT_MESSAGE" value="Operation Rules Done and Tested but not on extreme test cases" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -600,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/InputHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
+        <state relative-caret-position="-119">
           <caret line="15" column="21" lean-forward="true" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding />
         </state>

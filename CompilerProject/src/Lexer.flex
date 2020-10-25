@@ -9,8 +9,6 @@ cer = [\n|\r|\n\r]
     // nothing was necessary here edit :: -Arya
 %}
 
-%xstate cb
-
 %%
 // ----------------------------------------------------------rule part -------------------------------------------------
 // ------------------------------------------------------Key word Token rules ------------------------------------------
@@ -51,12 +49,35 @@ public          {OutputHandler.handle(Token.T_public);}
 true            {OutputHandler.handle("true", Token.T_BOOLEANLITERAL);}
 false           {OutputHandler.handle("false", Token.T_BOOLEANLITERAL);}
 
+"+"             {OutputHandler.handle(Token.T_Plus);}
+"-"             {OutputHandler.handle(Token.T_Minus);}
+"*"             {OutputHandler.handle(Token.T_Star);}
+"/"             {OutputHandler.handle(Token.T_Slash);}
+"%"             {OutputHandler.handle(Token.T_Modulus);}
+">"             {OutputHandler.handle(Token.T_GT);}
+">="            {OutputHandler.handle(Token.T_GE);}
+"<"             {OutputHandler.handle(Token.T_LT);}
+"<="            {OutputHandler.handle(Token.T_LE);}
+"=="            {OutputHandler.handle(Token.T_EQ);}
+"="             {OutputHandler.handle(Token.T_Assign);}
+"!="            {OutputHandler.handle(Token.T_NE);}
+"!"             {OutputHandler.handle(Token.T_NOT);}
+"&&"            {OutputHandler.handle(Token.T_AND);}
+"||"            {OutputHandler.handle(Token.T_OR);}
+";"             {OutputHandler.handle(Token.T_SemiColon);}
+","             {OutputHandler.handle(Token.T_Comma);}
+"."             {OutputHandler.handle(Token.T_Dot);}
+"["             {OutputHandler.handle(Token.T_OBracket);}
+"]"             {OutputHandler.handle(Token.T_CBracket);}
+"("             {OutputHandler.handle(Token.T_OParen);}
+")"             {OutputHandler.handle(Token.T_CParen);}
+
 // ------------------------------------------------------ Lexer ignored rules ------------------------------------------
 
 [" "]           {/* no operation*/}
+"/*" ~"*/"      {/* no operation*/}
+["//"] ~{cer}   {/* no operation*/}
 {cer}           {/* no operation*/}
-["//"]~{cer}    {/* no operation*/}
-["/*"]~["*/"]   {/* no operation*/}
 
 // ------------------------------------------------------- String literals ---------------------------------------------
 
@@ -65,10 +86,15 @@ false           {OutputHandler.handle("false", Token.T_BOOLEANLITERAL);}
 // -------------------------------------------------- Integer and double literals --------------------------------------
 
 [0][x|X][0-9a-fA-F]+                {OutputHandler.handle(yytext(),Token.T_INTLITERAL);}
-[0-9]+                              {OutputHandler.handle(yytext(),Token.T_INTLITERAL);}
 [0-9]+[.][0-9]*[e|E][+|-]?[0-9]+    {OutputHandler.handle(yytext(),Token.T_DOUBLELITERAL);}
+[0-9]+[.][0-9]*                     {OutputHandler.handle(yytext(),Token.T_DOUBLELITERAL);}
+[0-9]+                              {OutputHandler.handle(yytext(),Token.T_INTLITERAL);}
+
 
 // ---------------------------------------------------------------------------------------------------------------------
-[A-Za-z_$][A-Za-z_$0-9]*    {OutputHandler.handle(yytext(),Token.T_ID);}    // rule for ID
-// ---------------------------------------------------------------------------------------------------------------------
 
+[A-Za-z_$][A-Za-z_$0-9]*    {OutputHandler.handle(yytext(),Token.T_ID);}    // rule for ID checking
+
+//to Generate lexical Scanner
+//cd src
+//java -jar jflex-full-1.8.2.jar Lexer.flex

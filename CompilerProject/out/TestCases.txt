@@ -1,4 +1,8 @@
-
+/*
+/*/* <<<<<<< HEAD */
+/* allloooooo injaaaaa commmentt hastaaaaaaaaaaa
+hanozam hast
+baste shod*/
 
 //other reserved words:     Arya
     T_BOOLEANLITERAL /*i.e. true | false*/,
@@ -12,10 +16,21 @@
     T_OBracket("["), T_CBracket("]"), T_OParen("("), T_Cparen(")"),
     /*==================================*/
     // comments:    Arya
+=======
++ - * / %
+== =
+= ==
+>= >
+<= <
+()
+[]
+[()]
+; . ,
+>>>>>>> Ali
 
 public interface Compiler_interface{
-
 }
+<<<<<<< HEAD
 000x87239482459
 000x00af1297593
 0392702930502735028370
@@ -23,7 +38,7 @@ public interface Compiler_interface{
 voidtoi
 0xabcdefg0XABCDef12456ffff
 0XABCDef12456ffff
-
+*/
 2E2 // wrong. or rather a number and a keyword.
 2.E2 // correct
 12.2092385E21241 // correct
@@ -33,21 +48,33 @@ voidtoi
 .12E+2
 .12E-2
 0.12
+00.12
 000.12E2
-000.12E+2
+0.12E+2
 0000000.12E-2
 0.12000
 000.12E00
 000.12E+0002
 0000000.12E-002
-12. // not correct
+12. // correct
 12.E2
 12.E+2
 12.E-2
+
+23.44
+
+/*
 class Compiler_class implements Compiler_interface {
     int ab;
 }
 // hello this is a comment
+=======
+
+class Compiler_class implements Compiler_interface {
+    int ab;
+}
+
+>>>>>>> Ali
 int main(void){
 
     int intcvff;
@@ -56,3 +83,4 @@ int main(void){
     int b = 12;
 
 }
+*/*/*/

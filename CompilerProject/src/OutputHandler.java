@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 
 public class OutputHandler {
+
     public static ArrayList<TokenClass> buffer = new ArrayList<>();
     public static void handle(Token token){
         TokenClass tc = new TokenClass(token);
@@ -19,4 +20,5 @@ public class OutputHandler {
         if(token == Token.something)
             System.out.println("DETECTED!!!: " + token);
     }*/
+
 }

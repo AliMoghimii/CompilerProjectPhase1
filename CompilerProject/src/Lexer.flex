@@ -71,6 +71,8 @@ false           {OutputHandler.handle("false", Token.T_BOOLEANLITERAL);}
 "]"             {OutputHandler.handle(Token.T_CBracket);}
 "("             {OutputHandler.handle(Token.T_OParen);}
 ")"             {OutputHandler.handle(Token.T_CParen);}
+"{"             {OutputHandler.handle(Token.T_OCB);}
+"}"             {OutputHandler.handle(Token.T_CCB);}
 
 // ------------------------------------------------------ Lexer ignored rules ------------------------------------------
 

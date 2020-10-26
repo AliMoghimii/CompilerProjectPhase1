@@ -1,3 +1,4 @@
+package compiler;
 public enum Token {
 
     //list of Tokens described in project.
